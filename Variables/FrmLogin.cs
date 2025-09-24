@@ -23,15 +23,15 @@ namespace Variables
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (Login(tbUser.Text, tbPassword.Text))
-            {
-                new Form1().Show();
-                this.Hide();
-            }
+            if (Login(tbUser.Text, tbPassword.Text));
+            new Form1().Show();
+            this.Hide();
+           
         }
-        private Boolean Login(string username, string password) 
+        private Boolean Login(string username, string password)
         {
             return username.Equals("admin") && password.Equals("admin");
         }
+    }
 }
 //FrmLogin
