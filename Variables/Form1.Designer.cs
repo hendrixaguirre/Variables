@@ -35,6 +35,7 @@
             this.btnVerificar = new System.Windows.Forms.Button();
             this.lblVariableLocal = new System.Windows.Forms.Label();
             this.lblVariableGlobal = new System.Windows.Forms.Label();
+            this.btnVerificarG = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -72,9 +73,9 @@
             // btnVerificar
             // 
             this.btnVerificar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnVerificar.Location = new System.Drawing.Point(101, 124);
+            this.btnVerificar.Location = new System.Drawing.Point(29, 108);
             this.btnVerificar.Name = "btnVerificar";
-            this.btnVerificar.Size = new System.Drawing.Size(221, 72);
+            this.btnVerificar.Size = new System.Drawing.Size(120, 72);
             this.btnVerificar.TabIndex = 4;
             this.btnVerificar.Text = "Verificar";
             this.btnVerificar.UseVisualStyleBackColor = false;
@@ -83,7 +84,7 @@
             // lblVariableLocal
             // 
             this.lblVariableLocal.AutoSize = true;
-            this.lblVariableLocal.Location = new System.Drawing.Point(98, 217);
+            this.lblVariableLocal.Location = new System.Drawing.Point(48, 214);
             this.lblVariableLocal.Name = "lblVariableLocal";
             this.lblVariableLocal.Size = new System.Drawing.Size(70, 13);
             this.lblVariableLocal.TabIndex = 5;
@@ -92,17 +93,29 @@
             // lblVariableGlobal
             // 
             this.lblVariableGlobal.AutoSize = true;
-            this.lblVariableGlobal.Location = new System.Drawing.Point(98, 252);
+            this.lblVariableGlobal.Location = new System.Drawing.Point(48, 255);
             this.lblVariableGlobal.Name = "lblVariableGlobal";
             this.lblVariableGlobal.Size = new System.Drawing.Size(78, 13);
             this.lblVariableGlobal.TabIndex = 6;
             this.lblVariableGlobal.Text = "Variable Global";
+            // 
+            // btnVerificarG
+            // 
+            this.btnVerificarG.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnVerificarG.Location = new System.Drawing.Point(190, 108);
+            this.btnVerificarG.Name = "btnVerificarG";
+            this.btnVerificarG.Size = new System.Drawing.Size(111, 72);
+            this.btnVerificarG.TabIndex = 7;
+            this.btnVerificarG.Text = "Verificar Global";
+            this.btnVerificarG.UseVisualStyleBackColor = false;
+            this.btnVerificarG.Click += new System.EventHandler(this.btnVerificarG_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(378, 410);
+            this.Controls.Add(this.btnVerificarG);
             this.Controls.Add(this.lblVariableGlobal);
             this.Controls.Add(this.lblVariableLocal);
             this.Controls.Add(this.btnVerificar);
@@ -111,6 +124,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -126,6 +140,7 @@
         private System.Windows.Forms.Button btnVerificar;
         private System.Windows.Forms.Label lblVariableLocal;
         private System.Windows.Forms.Label lblVariableGlobal;
+        private System.Windows.Forms.Button btnVerificarG;
     }
 }
 
