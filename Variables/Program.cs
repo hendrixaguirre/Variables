@@ -16,7 +16,14 @@ namespace Variables
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmLogin());
+            using (FrmLogin Login = new FrmLogin())
+            {
+                if (Login.ShowDialog() == DialogResult.OK)
+                {
+                    Application.Run(new FrmPrincipal());
+                }
+
+            }
         }
     }
 }
