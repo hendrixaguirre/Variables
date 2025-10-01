@@ -46,12 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmPrincipal.cs">
+    <Compile Include="Formularios\FrmArreglos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPrincipal.Designer.cs">
+    <Compile Include="Formularios\FrmArreglos.Designer.cs">
+      <DependentUpon>FrmArreglos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modelos\Arreglo.cs" />
     <Compile Include="Modelos\Facultad.cs" />
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
@@ -61,10 +68,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\FrmArreglos.resx">
+      <DependentUpon>FrmArreglos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPrincipal.resx">
+    <EmbeddedResource Include="Formularios\FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Security.Cryptography;
 using System.Windows.Forms;
 
 namespace Variables
@@ -24,7 +23,12 @@ namespace Variables
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (Login(tbUser.Text, tbPassword.Text)) 
+            Logear();
+        }
+
+        private void Logear()
+        {
+            if (Login(tbUser.Text, tbPassword.Text))
             {
                 this.DialogResult = DialogResult.OK;
                 this.Close();
@@ -47,11 +51,24 @@ namespace Variables
                     tbPassword.Focus();
                 }
             }
-
         }
+       
         private Boolean Login(string username, string password)
         {
             return username.Equals("admin") && password.Equals("admin");
+        }
+
+        private void tbPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                Logear();
+            }
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -69,6 +69,7 @@
             this.tbPassword.PasswordChar = '*';
             this.tbPassword.Size = new System.Drawing.Size(276, 23);
             this.tbPassword.TabIndex = 3;
+            this.tbPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbPassword_KeyDown);
             // 
             // btnLogin
             // 
@@ -107,6 +108,7 @@
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmLogin";
+            this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
