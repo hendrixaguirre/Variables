@@ -35,11 +35,14 @@
             this.lbEdades = new System.Windows.Forms.ListBox();
             this.tbEdad = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblMayorDeEdad = new System.Windows.Forms.Label();
+            this.lblMenorDeEdad = new System.Windows.Forms.Label();
             this.gbEdades.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbEdades
             // 
+            this.gbEdades.Controls.Add(this.lblMayorDeEdad);
             this.gbEdades.Controls.Add(this.lblMenor);
             this.gbEdades.Controls.Add(this.lblMayor);
             this.gbEdades.Controls.Add(this.lblPromedio);
@@ -103,11 +106,28 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Ingrese la edad:";
             // 
+            // lblMayorDeEdad
+            // 
+            this.lblMayorDeEdad.Location = new System.Drawing.Point(7, 383);
+            this.lblMayorDeEdad.Name = "lblMayorDeEdad";
+            this.lblMayorDeEdad.Size = new System.Drawing.Size(120, 31);
+            this.lblMayorDeEdad.TabIndex = 6;
+            this.lblMayorDeEdad.Text = "Mayores de edad: 0";
+            // 
+            // lblMenorDeEdad
+            // 
+            this.lblMenorDeEdad.Location = new System.Drawing.Point(19, 435);
+            this.lblMenorDeEdad.Name = "lblMenorDeEdad";
+            this.lblMenorDeEdad.Size = new System.Drawing.Size(120, 31);
+            this.lblMenorDeEdad.TabIndex = 7;
+            this.lblMenorDeEdad.Text = "Menores de edad: 0";
+            // 
             // FrmArreglos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(603, 450);
+            this.ClientSize = new System.Drawing.Size(603, 506);
+            this.Controls.Add(this.lblMenorDeEdad);
             this.Controls.Add(this.gbEdades);
             this.MaximizeBox = false;
             this.Name = "FrmArreglos";
@@ -127,5 +147,7 @@
         private System.Windows.Forms.ListBox lbEdades;
         private System.Windows.Forms.Label lblMenor;
         private System.Windows.Forms.Label lblMayor;
+        private System.Windows.Forms.Label lblMayorDeEdad;
+        private System.Windows.Forms.Label lblMenorDeEdad;
     }
 }

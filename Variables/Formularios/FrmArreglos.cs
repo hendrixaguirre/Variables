@@ -52,6 +52,8 @@ namespace Variables.Formularios
             lblPromedio.Text = "Promedio: " + Arreglo.GetPromedio();
             lblMayor.Text = "Mayor: " + Arreglo.GetEdadMaxima();
             lblMenor.Text = "Menor: " + Arreglo.GetEdadMinima();
+            lblMayorDeEdad.Text = "Mayores de Edad: " + Arreglo.GetMayorEdad();
+            lblMenorDeEdad.Text = "Menores de Edad: " + Arreglo.GetMenorEdad();
         }
     }
 }

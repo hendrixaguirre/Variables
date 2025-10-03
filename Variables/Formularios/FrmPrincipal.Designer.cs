@@ -32,10 +32,10 @@
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.catálogosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.edadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblFecha = new System.Windows.Forms.ToolStripStatusLabel();
-            this.edadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -75,6 +75,13 @@
             this.catálogosToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.catálogosToolStripMenuItem.Text = "Catálogos";
             // 
+            // edadesToolStripMenuItem
+            // 
+            this.edadesToolStripMenuItem.Name = "edadesToolStripMenuItem";
+            this.edadesToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.edadesToolStripMenuItem.Text = "Edades";
+            this.edadesToolStripMenuItem.Click += new System.EventHandler(this.edadesToolStripMenuItem_Click);
+            // 
             // reportesToolStripMenuItem
             // 
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
@@ -96,13 +103,6 @@
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(38, 17);
             this.lblFecha.Text = "Fecha";
-            // 
-            // edadesToolStripMenuItem
-            // 
-            this.edadesToolStripMenuItem.Name = "edadesToolStripMenuItem";
-            this.edadesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.edadesToolStripMenuItem.Text = "Edades";
-            this.edadesToolStripMenuItem.Click += new System.EventHandler(this.edadesToolStripMenuItem_Click);
             // 
             // FrmPrincipal
             // 

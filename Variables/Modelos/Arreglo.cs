@@ -15,7 +15,7 @@ namespace Variables.Modelos
         {
             int prom = 0;
             int suma = 0;
-            foreach(int edad in edades)
+            foreach (int edad in edades)
             {
                 suma += edad;
             }
@@ -45,7 +45,7 @@ namespace Variables.Modelos
                 if (edad > edadMaxima)
                 {
                     edadMaxima = edad;
-                }   
+                }
             }
             return edadMaxima;
         }
@@ -60,5 +60,31 @@ namespace Variables.Modelos
             return edadMin;
         }
 
+        public static int GetMayorEdad()
+        {
+            int MayorDeEdad = 0;
+            foreach (int edad in edades)
+            {
+                if (edad >= 18 && edad < 100)
+                {
+                    MayorDeEdad++;
+                }
+            }
+            return MayorDeEdad;
+        }
+
+        public static int GetMenorEdad()
+        {
+            int MenorDeEdad = 0;
+            foreach (int edad in edades)
+            {
+                if (edad < 18 && edad > 0)
+                {
+                    MenorDeEdad++;
+                }
+            }
+            return MenorDeEdad;
+        }
     }
-}
+}   
+    
