@@ -25,16 +25,17 @@ namespace Variables.Formularios
             {
                 int edad = int.Parse(tbEdad.Text);
                 if (Arreglo.pos <= 10)
-                Arreglo.edad[Arreglo.pos++] = edad;
+                Arreglo.edades[Arreglo.pos++] = edad;
                 else MessageBox.Show("No se pueden agregar más elementos", "Arreglo lleno", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                llenarListado();
+                LlenarListado();
+                MostrarCalculos();
             }
            
         }
-        public void llenarListado()
+        public void LlenarListado()
         {
             lbEdades.DataSource = null;
-            lbEdades.DataSource = Arreglo.edad;
+            lbEdades.DataSource = Arreglo.edades;
             lbEdades.Refresh();
             gbEdades.Text = "Edades: " + Arreglo.pos;
             tbEdad.Text = "";
@@ -44,6 +45,13 @@ namespace Variables.Formularios
         private void gbEdades_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        public void MostrarCalculos()
+        {
+            lblPromedio.Text = "Promedio: " + Arreglo.GetPromedio();
+            lblMayor.Text = "Mayor: " + Arreglo.GetEdadMaxima();
+            lblMenor.Text = "Menor: " + Arreglo.GetEdadMinima();
         }
     }
 }
