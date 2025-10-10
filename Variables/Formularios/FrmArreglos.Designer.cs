@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.gbEdades = new System.Windows.Forms.GroupBox();
+            this.lblMayorDeEdad = new System.Windows.Forms.Label();
             this.lblMenor = new System.Windows.Forms.Label();
             this.lblMayor = new System.Windows.Forms.Label();
             this.lblPromedio = new System.Windows.Forms.Label();
             this.lbEdades = new System.Windows.Forms.ListBox();
             this.tbEdad = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblMayorDeEdad = new System.Windows.Forms.Label();
             this.lblMenorDeEdad = new System.Windows.Forms.Label();
             this.gbEdades.SuspendLayout();
             this.SuspendLayout();
@@ -55,7 +55,14 @@
             this.gbEdades.TabIndex = 0;
             this.gbEdades.TabStop = false;
             this.gbEdades.Text = "Edades: 0";
-            this.gbEdades.Enter += new System.EventHandler(this.gbEdades_Enter);
+            // 
+            // lblMayorDeEdad
+            // 
+            this.lblMayorDeEdad.Location = new System.Drawing.Point(7, 383);
+            this.lblMayorDeEdad.Name = "lblMayorDeEdad";
+            this.lblMayorDeEdad.Size = new System.Drawing.Size(120, 31);
+            this.lblMayorDeEdad.TabIndex = 6;
+            this.lblMayorDeEdad.Text = "Mayores de edad: 0";
             // 
             // lblMenor
             // 
@@ -88,6 +95,7 @@
             this.lbEdades.Name = "lbEdades";
             this.lbEdades.Size = new System.Drawing.Size(120, 199);
             this.lbEdades.TabIndex = 2;
+            this.lbEdades.SelectedIndexChanged += new System.EventHandler(this.lbEdades_SelectedIndexChanged);
             // 
             // tbEdad
             // 
@@ -95,6 +103,7 @@
             this.tbEdad.Name = "tbEdad";
             this.tbEdad.Size = new System.Drawing.Size(120, 20);
             this.tbEdad.TabIndex = 1;
+            this.tbEdad.TextChanged += new System.EventHandler(this.tbEdad_TextChanged);
             this.tbEdad.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbEdad_KeyDown);
             // 
             // label1
@@ -105,14 +114,6 @@
             this.label1.Size = new System.Drawing.Size(83, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ingrese la edad:";
-            // 
-            // lblMayorDeEdad
-            // 
-            this.lblMayorDeEdad.Location = new System.Drawing.Point(7, 383);
-            this.lblMayorDeEdad.Name = "lblMayorDeEdad";
-            this.lblMayorDeEdad.Size = new System.Drawing.Size(120, 31);
-            this.lblMayorDeEdad.TabIndex = 6;
-            this.lblMayorDeEdad.Text = "Mayores de edad: 0";
             // 
             // lblMenorDeEdad
             // 
@@ -126,7 +127,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(603, 506);
+            this.ClientSize = new System.Drawing.Size(317, 506);
             this.Controls.Add(this.lblMenorDeEdad);
             this.Controls.Add(this.gbEdades);
             this.MaximizeBox = false;

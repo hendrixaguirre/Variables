@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Variables.Modelos
 {
-    public class Arreglo
+    public class Estudio
     {
         public static int[] edades = new int[10];
         public static int pos = 0;
+        
 
         public static int GetPromedio()
         {
@@ -23,70 +24,56 @@ namespace Variables.Modelos
             return prom;
         }
 
-        public static double GetPromedioD()
-        {
-            double prom = 0;
-            double suma = 0;
-            foreach (int edad in edades)
-            {
-                suma += edad;
-            }
-            prom = suma / pos;
-
-            return prom;
-        }
-
-        public static int GetEdadMaxima()
+        public static int GetMayor()
         {
             int edadMaxima = 0;
             foreach (int edad in edades)
             {
                 if (edad > edadMaxima)
                 {
-                    edadMaxima = edad;
+                   edadMaxima = edad;
                 }
             }
             return edadMaxima;
         }
 
-        public static int GetEdadMinima()
+        public static int GetMenor()
         {
-            int edadMin = edades[0];
+            int edadMinima = edades[0];
             for (int i = 1; i < pos; i++)
             {
-                if (edades[i] < edadMin)
+                if (edades[i] < edadMinima)
                 {
-                    edadMin = edades[i];
+                    edadMinima = edades[i];
                 }
             }
-            return edadMin;
+            return edadMinima;
         }
 
         public static int GetMayorEdad()
         {
-            int MayorDeEdad = 0;
+            int MayorEdad = 0;
             foreach (int edad in edades)
             {
-                if (edad >= 18 && edad < 100)
+                if (edad >=18 && edad < 100)
                 {
-                    MayorDeEdad++;
+                    MayorEdad++;
                 }
             }
-            return MayorDeEdad;
+            return MayorEdad;
         }
 
         public static int GetMenorEdad()
         {
-            int MenorDeEdad = 0;
+            int MenorEdad = 0;
             foreach (int edad in edades)
             {
-                if (edad < 18 && edad > 0)
+                if (edad > 0 && edad < 18)
                 {
-                    MenorDeEdad++;
+                    MenorEdad++;
                 }
             }
-            return MenorDeEdad;
+            return MenorEdad;
         }
     }
-}   
-    
+}

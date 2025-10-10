@@ -52,6 +52,12 @@
     <Compile Include="Formularios\FrmArreglos.Designer.cs">
       <DependentUpon>FrmArreglos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmEstudio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmEstudio.Designer.cs">
+      <DependentUpon>FrmEstudio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmMatriz.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,7 +70,14 @@
     <Compile Include="Formularios\FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmMatrizCuadrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmMatrizCuadrada.Designer.cs">
+      <DependentUpon>FrmMatrizCuadrada.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modelos\Arreglo.cs" />
+    <Compile Include="Modelos\Estudio.cs" />
     <Compile Include="Modelos\Facultad.cs" />
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
@@ -73,13 +86,20 @@
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Modelos\Matriz.cs" />
+    <Compile Include="Modelos\MatrizCuadrada.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\FrmArreglos.resx">
       <DependentUpon>FrmArreglos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmEstudio.resx">
+      <DependentUpon>FrmEstudio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmMatriz.resx">
       <DependentUpon>FrmMatriz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmMatrizCuadrada.resx">
+      <DependentUpon>FrmMatrizCuadrada.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

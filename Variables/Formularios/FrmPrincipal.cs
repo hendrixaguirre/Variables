@@ -32,5 +32,17 @@ namespace Variables
             FrmMatriz frm = new FrmMatriz();
             frm.ShowDialog();
         }
+
+        private void matrizUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmMatrizCuadrada frm = new FrmMatrizCuadrada();
+            frm.ShowDialog();
+        }
+
+        private void arregloCamilaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmEstudio frm = new FrmEstudio();
+            frm.ShowDialog();
+        }
     }
 }

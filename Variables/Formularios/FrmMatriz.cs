@@ -13,25 +13,31 @@ namespace Variables.Formularios
 {
     public partial class FrmMatriz : Form
     {
-        Matriz mc = new Matriz();
         public FrmMatriz()
         {
             InitializeComponent();
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-        }
-
+        Matriz mc = new Matriz();
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            int dato = int.Parse(tbNumero.Text);
-            mc.Agregar(dato);
+            int dato = 0;
+            try
+            {
+                dato = int.Parse(tbNumero.Text);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("TIENE QUE SER UN NÚMERO ENTERO, imbécil", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            if (mc.Agregar(dato))
+            {
+                dgvMatriz.DataSource = null;
+                dgvMatriz.DataSource = mc.getMatrizC();
+                dgvMatriz.Refresh();
+                MessageBox.Show("Agregado.");
+            }
+            else btnAgregar.Enabled = false;
 
-            dgvMatriz.DataSource = null;
-            dgvMatriz.DataSource = mc.GetMatriz();
-            dgvMatriz.Refresh();
-            MessageBox.Show("Agregado");
         }
     }
 }

@@ -24,13 +24,11 @@ namespace Variables.Formularios
             if (e.KeyCode == Keys.Enter)
             {
                 int edad = int.Parse(tbEdad.Text);
-                if (Arreglo.pos <= 10)
-                Arreglo.edades[Arreglo.pos++] = edad;
-                else MessageBox.Show("No se pueden agregar más elementos", "Arreglo lleno", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                LlenarListado();
-                MostrarCalculos();
+                if (Arreglo.pos < 10) Arreglo.edades[Arreglo.pos++] = edad;
+                else MessageBox.Show("No se puede agregar mas elementos", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    LlenarListado();
+                    MostrarCalculos();
             }
-           
         }
         public void LlenarListado()
         {
@@ -42,11 +40,6 @@ namespace Variables.Formularios
             tbEdad.Focus();
         }
 
-        private void gbEdades_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         public void MostrarCalculos()
         {
             lblPromedio.Text = "Promedio: " + Arreglo.GetPromedio();
@@ -54,6 +47,16 @@ namespace Variables.Formularios
             lblMenor.Text = "Menor: " + Arreglo.GetEdadMinima();
             lblMayorDeEdad.Text = "Mayores de Edad: " + Arreglo.GetMayorEdad();
             lblMenorDeEdad.Text = "Menores de Edad: " + Arreglo.GetMenorEdad();
+        }
+
+        private void tbEdad_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbEdades_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

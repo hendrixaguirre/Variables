@@ -33,10 +33,12 @@
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.catálogosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.edadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarMatrizToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.matrizUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblFecha = new System.Windows.Forms.ToolStripStatusLabel();
-            this.agregarMatrizToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.arregloCamilaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -72,7 +74,9 @@
             // 
             this.catálogosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.edadesToolStripMenuItem,
-            this.agregarMatrizToolStripMenuItem});
+            this.agregarMatrizToolStripMenuItem,
+            this.matrizUsuarioToolStripMenuItem,
+            this.arregloCamilaToolStripMenuItem});
             this.catálogosToolStripMenuItem.Name = "catálogosToolStripMenuItem";
             this.catálogosToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.catálogosToolStripMenuItem.Text = "Catálogos";
@@ -83,6 +87,20 @@
             this.edadesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.edadesToolStripMenuItem.Text = "Edades";
             this.edadesToolStripMenuItem.Click += new System.EventHandler(this.edadesToolStripMenuItem_Click);
+            // 
+            // agregarMatrizToolStripMenuItem
+            // 
+            this.agregarMatrizToolStripMenuItem.Name = "agregarMatrizToolStripMenuItem";
+            this.agregarMatrizToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.agregarMatrizToolStripMenuItem.Text = "Agregar Matriz";
+            this.agregarMatrizToolStripMenuItem.Click += new System.EventHandler(this.agregarMatrizToolStripMenuItem_Click);
+            // 
+            // matrizUsuarioToolStripMenuItem
+            // 
+            this.matrizUsuarioToolStripMenuItem.Name = "matrizUsuarioToolStripMenuItem";
+            this.matrizUsuarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.matrizUsuarioToolStripMenuItem.Text = "Matriz Usuario";
+            this.matrizUsuarioToolStripMenuItem.Click += new System.EventHandler(this.matrizUsuarioToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
@@ -106,12 +124,12 @@
             this.lblFecha.Size = new System.Drawing.Size(38, 17);
             this.lblFecha.Text = "Fecha";
             // 
-            // agregarMatrizToolStripMenuItem
+            // arregloCamilaToolStripMenuItem
             // 
-            this.agregarMatrizToolStripMenuItem.Name = "agregarMatrizToolStripMenuItem";
-            this.agregarMatrizToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.agregarMatrizToolStripMenuItem.Text = "Agregar Matriz";
-            this.agregarMatrizToolStripMenuItem.Click += new System.EventHandler(this.agregarMatrizToolStripMenuItem_Click);
+            this.arregloCamilaToolStripMenuItem.Name = "arregloCamilaToolStripMenuItem";
+            this.arregloCamilaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.arregloCamilaToolStripMenuItem.Text = "Arreglo Camila";
+            this.arregloCamilaToolStripMenuItem.Click += new System.EventHandler(this.arregloCamilaToolStripMenuItem_Click);
             // 
             // FrmPrincipal
             // 
@@ -145,5 +163,7 @@
         private System.Windows.Forms.ToolStripStatusLabel lblFecha;
         private System.Windows.Forms.ToolStripMenuItem edadesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agregarMatrizToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem matrizUsuarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem arregloCamilaToolStripMenuItem;
     }
 }
